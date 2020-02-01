@@ -26,23 +26,30 @@ public class Dock : MonoBehaviour, IDocable
     public void Attach(DockHandler item)
     {
         wire.enabled = true;
+        ///////////////////
+        if(Docked() == false)
+        {
+            audio.clip = attachMP3;
+            Play();
+        }
+        //\\\\\\\\\\\\\\\\\
         this.item = item;
         item.GetComponent<IAttachable>().OnAttach();
-        ///////////////////
-        audio.clip = attachMP3;
-        Play();
-        //\\\\\\\\\\\\\\\\\
+        
     }
 
     public void Dettach()
     {
         wire.enabled = false;
         item.GetComponent<IAttachable>().OnDettach();
-        this.item = null;
         ///////////////////
-        audio.clip = dettachMP3;
-        Play();
+        if (Docked() == false)
+        {
+            audio.clip = dettachMP3;
+            Play();
+        }
         //\\\\\\\\\\\\\\\\\
+        this.item = null;
     }
 
     public bool Docked()

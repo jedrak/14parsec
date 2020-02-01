@@ -45,8 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prifab: {fileID: 2742033648596003328, guid: b8dc1187478f0bc4ca27c35ced876ed6, type: 3}
   maxCount: 1
-  startCount: 2
-  spawnRange: 3
-  outRange: 4
+  startCount: 0
+  spawnRange: 10
+  outRange: 10
+  prepareTime: 30
   timeToNextSpawn:
-  - 40
+  - 20
