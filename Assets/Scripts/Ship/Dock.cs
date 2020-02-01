@@ -31,6 +31,7 @@ public class Dock : MonoBehaviour, IDocable
         ///////////////////
         audio.clip = attachMP3;
         Play();
+        Debug.Log("attach");
         //\\\\\\\\\\\\\\\\\
     }
 

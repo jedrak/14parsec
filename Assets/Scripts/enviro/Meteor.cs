@@ -24,6 +24,14 @@ public class Meteor : SpawnAble
     {
         rb = GetComponent<Rigidbody2D>();
     }
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+    void OnEnable()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     public override void Spawn(Vector3 direction)
     {
