@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6766718215735188169}
   - component: {fileID: 6766718215735188170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6766718215807118280}
   - component: {fileID: 6766718215807118281}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShieldCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6766718216277161333}
   - component: {fileID: 6766718216277161334}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ForceBow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,9 @@ GameObject:
   - component: {fileID: 6766718217053413131}
   - component: {fileID: 6766718217053413133}
   - component: {fileID: 6766718217053413134}
-  m_Layer: 0
+  - component: {fileID: 3384489395020365059}
+  - component: {fileID: 4941880614555382624}
+  m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -316,3 +318,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &3384489395020365059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6766718217053413130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ed62402a0c5c640a1891a2d941f043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4941880614555382624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6766718217053413130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bb785a6dd9f5748938895b378da9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimalDistance: 0.15
