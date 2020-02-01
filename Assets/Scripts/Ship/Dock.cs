@@ -20,10 +20,12 @@ public class Dock : MonoBehaviour, IDocable
     public void Attach(DockHandler item)
     {
         this.item = item;
+        item.OnAttach();
     }
 
     public void Dettach()
     {
+        item.OnDettach();
         this.item = null;
     }
 

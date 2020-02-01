@@ -8,7 +8,7 @@ public class DockHandler : MonoBehaviour
     public float minimalDistance;
     private DragDrop _dragDrop; 
     [SerializeField]
-    private Dock _dock = null;
+    public Dock _dock { get; private set; } = null;
     void Start()
     {
         _dragDrop = GetComponent<DragDrop>();
@@ -37,18 +37,25 @@ public class DockHandler : MonoBehaviour
         if (_dock != null)
         {
             _dock.Attach(this);
-            Debug.Log(_dock.name);
+            //Debug.Log(_dock.name);
 
-            if(DistanceToDock(_dock) > minimalDistance)
+            if (DistanceToDock(_dock) > minimalDistance)
             {
                 _dock.Dettach();
                 _dock = null;
             }
-            
-        }
 
-        
-       
+        }
+    }
+
+    public virtual void OnAttach()
+    {
+
+    }
+
+    public virtual void OnDettach()
+    {
+
     }
 
     private void OnMouseDown()
