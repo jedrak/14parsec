@@ -38,4 +38,4 @@ public class Meteor : SpawnAble
         float size = Random.Range(minSize, maxSize);
         transform.localScale = new Vector3(size, size, 0);
     }
-}
+} 
