@@ -28,7 +28,6 @@ public class Meteor : SpawnAble
     {
         // Prędkość (cross sprawia że nie lecą prosto w ciebie tylko +- "angle" w ciebie)
         Vector3 cross = Vector3.Cross(direction.normalized, Vector3.forward) * Random.Range(-angle,angle);
-        //Debug.Log(rb.velocity);
         rb.velocity = (-direction + cross) * spead;
 
         // Ustawiamy losową prędkość obrotó
