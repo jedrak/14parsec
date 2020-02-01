@@ -14,7 +14,7 @@ interface IDocable
 public class Dock : MonoBehaviour, IDocable
 {
     [SerializeField]
-    private DockHandler item = null;
+    public DockHandler item { get; private set; } = null;
     private SpriteRenderer wire;
     //////////////////
     private AudioSource audio;
@@ -41,10 +41,11 @@ public class Dock : MonoBehaviour, IDocable
     public void Dettach()
     {
         wire.enabled = false;
-        item.GetComponent<IAttachable>().OnDettach();
+        
         ///////////////////
-        if (Docked() == false)
+        if (Docked() == true)
         {
+            item.GetComponent<IAttachable>().OnDettach();
             audio.clip = dettachMP3;
             Play();
         }

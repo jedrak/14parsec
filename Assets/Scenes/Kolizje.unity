@@ -392,6 +392,25 @@ PolygonCollider2D:
     - - {x: 0, y: 0}
       - {x: -5, y: 20}
       - {x: 5, y: 20}
+--- !u!1 &321221857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4992748670659349404, guid: 702c1aa0fcee9b04085b1ad66481473c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3253386366203812759}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &321221859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321221857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714cc26864ecb594caf03ac4ffa9fabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxNumber: 0
 --- !u!1001 &331744759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -887,7 +906,7 @@ GameObject:
   - component: {fileID: 1232760104}
   - component: {fileID: 1232760103}
   m_Layer: 0
-  m_Name: Planeta
+  m_Name: Planet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,7 +970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1232760102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.17, y: 42.92, z: -3.2910156}
+  m_LocalPosition: {x: 10.17, y: 42.92, z: 5}
   m_LocalScale: {x: 16, y: 16, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

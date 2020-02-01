@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 1665149531240024826}
   - component: {fileID: 1665149531240024829}
   - component: {fileID: 1665149531240024825}
+  - component: {fileID: 3189128974333683457}
   m_Layer: 8
   m_Name: Shield
   m_TagString: Untagged
@@ -302,6 +303,27 @@ PolygonCollider2D:
       - {x: 1.2075653, y: -0.5072069}
       - {x: 1.1135387, y: -0.48246312}
       - {x: 0.87462616, y: -0.6527846}
+--- !u!50 &3189128974333683457
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665149531240024824}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1665149531678747562
 GameObject:
   m_ObjectHideFlags: 0

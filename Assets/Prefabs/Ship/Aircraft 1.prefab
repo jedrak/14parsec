@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &2780674395099136302
 AudioSource:
   m_ObjectHideFlags: 0
@@ -188,6 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &4130437530539803897
 AudioSource:
   m_ObjectHideFlags: 0
@@ -330,6 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &3911899002267677241
 AudioSource:
   m_ObjectHideFlags: 0
@@ -472,6 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &5522616459487310264
 AudioSource:
   m_ObjectHideFlags: 0
@@ -614,6 +618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &2374066775685208459
 AudioSource:
   m_ObjectHideFlags: 0
@@ -756,6 +761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &3872091046226627986
 AudioSource:
   m_ObjectHideFlags: 0
@@ -898,6 +904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &2655614598609834672
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1040,6 +1047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &6095014990323705800
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1182,6 +1190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &6430398510330420621
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1324,6 +1333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &1662518680287048256
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1466,6 +1476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &8096982140486262243
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1608,6 +1619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &3177306870497179234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1750,6 +1762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &7943389688141607146
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1892,6 +1905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &308856814272263917
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2034,6 +2048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &4390900245213492496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2176,6 +2191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &4897520788896773439
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2318,6 +2334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &4172641920810528079
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2460,6 +2477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &60765318059737250
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2602,6 +2620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &3476717878096474383
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2744,6 +2763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &3856645499557419550
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2886,6 +2906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &8314254657225793989
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3028,6 +3049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &4982003844548211471
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3170,6 +3192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &2307084415142704639
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3312,6 +3335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &2293341358529814860
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3454,6 +3478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &1800191831654860355
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3596,6 +3621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 0}
+  dettachMP3: {fileID: 0}
 --- !u!82 &260323101808408686
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3785,6 +3811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3253386366101856542}
   - component: {fileID: 3253386366101856541}
+  - component: {fileID: 4618612775632925959}
   - component: {fileID: 3253386366101856540}
   - component: {fileID: 6748995528041609935}
   m_Layer: 9
@@ -3833,6 +3860,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4618612775632925959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253386366101856543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714cc26864ecb594caf03ac4ffa9fabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxNumber: 5
 --- !u!114 &3253386366101856540
 MonoBehaviour:
   m_ObjectHideFlags: 0

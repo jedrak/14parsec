@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6884674948306543498}
   - component: {fileID: 6884674948306543499}
   - component: {fileID: 812479649766839510}
+  - component: {fileID: 5189854426756473046}
   m_Layer: 8
   m_Name: Sensor
   m_TagString: Untagged
@@ -88,6 +89,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimalDistance: 0.15
+  freezePos: 0
 --- !u!114 &812479649766839510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,6 +102,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c0770a962f21394fbfa23a072452c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attached: 0
+--- !u!50 &5189854426756473046
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6884674948306543497}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &6884674948528823748
 GameObject:
   m_ObjectHideFlags: 0
