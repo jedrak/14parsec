@@ -18,6 +18,10 @@ public class Dock : MonoBehaviour, IDocable
     private SpriteRenderer wire;
     //////////////////
     private AudioSource audio;
+    [SerializeField]
+    private AudioClip dettachMP3;
+    private AudioClip attachMP3;
+    //\\\\\\\\\\\\\\\\
 
     public void Attach(DockHandler item)
     {
@@ -25,7 +29,9 @@ public class Dock : MonoBehaviour, IDocable
         this.item = item;
         item.GetComponent<IAttachable>().OnAttach();
         ///////////////////
-        audio.Play();
+        audio.clip = attachMP3;
+        Play();
+        //\\\\\\\\\\\\\\\\\
     }
 
     public void Dettach()
@@ -33,6 +39,10 @@ public class Dock : MonoBehaviour, IDocable
         wire.enabled = false;
         item.GetComponent<IAttachable>().OnDettach();
         this.item = null;
+        ///////////////////
+        audio.clip = dettachMP3;
+        Play();
+        //\\\\\\\\\\\\\\\\\
     }
 
     public bool Docked()
@@ -40,7 +50,13 @@ public class Dock : MonoBehaviour, IDocable
         return item != null;
     }
 
-
+    void Play()
+    {
+        if (audio.isPlaying == false)
+        {
+            audio.Play();
+        }
+    }
 
 
 
@@ -51,6 +67,8 @@ public class Dock : MonoBehaviour, IDocable
         wire.enabled = false;
         //////////////////
         audio = GetComponent<AudioSource>();
+        attachMP3 = audio.clip;
+        //\\\\\\\\\\\\\\\\
     }
 
     // Update is called once per frame
