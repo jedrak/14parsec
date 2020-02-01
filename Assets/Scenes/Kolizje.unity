@@ -730,6 +730,20 @@ PolygonCollider2D:
     - - {x: 0, y: 0}
       - {x: -5, y: 20}
       - {x: 5, y: 20}
+--- !u!114 &1255742642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255742637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4519b610abbb749bbac66617de65d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterModules: 0
+  counterObstacles: 0
 --- !u!1001 &1378796641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1179,6 +1193,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Aircraft
+      objectReference: {fileID: 0}
+    - target: {fileID: 3915480891728613234, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3915480891728613235, guid: 702c1aa0fcee9b04085b1ad66481473c,
         type: 3}
