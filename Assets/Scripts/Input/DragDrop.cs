@@ -19,7 +19,7 @@ public class DragDrop : MonoBehaviour
         _isDraged = true;
         Vector3 buff = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = new Vector3(buff.x, buff.y, 0);
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
     }
 
     private void OnMouseUp()

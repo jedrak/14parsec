@@ -20,15 +20,15 @@ public class Engine : MonoBehaviour, IAttachable
     {
         //transform.parent = _dock.transform;
         Vector3 buff = transform.localRotation * (new Vector3(0, 1, 0));
-        Debug.DrawRay(transform.position, buff);
+        //Debug.DrawRay(transform.position, buff);
         GetComponent<DockHandler>()._dock.GetComponentsInParent<Rigidbody2D>()[0].AddForceAtPosition((buff*force) , new Vector2(transform.position.x, transform.position.y));
     }
 
     public void OnDettach()
     {
-        Debug.Log("Dett");
+        //Debug.Log(GetComponent<DockHandler>()._dock.name);
         Vector3 buff = transform.localRotation * (new Vector3(0, -1, 0));
-        GetComponent<DockHandler>()._dock.GetComponentsInParent<Rigidbody2D>()[0].AddForceAtPosition((buff * force), new Vector2(transform.position.x, transform.position.y));
+        //GetComponent<DockHandler>()._dock.GetComponentsInParent<Rigidbody2D>()[0].AddForceAtPosition((buff * force), new Vector2(transform.position.x, transform.position.y));
     }
 
 }

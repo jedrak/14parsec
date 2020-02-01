@@ -25,6 +25,7 @@ public class Dock : MonoBehaviour, IDocable
 
     public void Dettach()
     {
+        
         item.GetComponent<IAttachable>().OnDettach();
         this.item = null;
     }
@@ -36,10 +37,6 @@ public class Dock : MonoBehaviour, IDocable
 
 
 
-    public void Rot()
-    {
-        item.transform.rotation = transform.rotation;
-    }
 
 
     // Start is called before the first frame update
@@ -53,7 +50,7 @@ public class Dock : MonoBehaviour, IDocable
     {
         if (Docked())
         {
-            item.transform.position = transform.position;
+            if(item.freezePos) item.transform.position = transform.position;
             item.transform.rotation = transform.rotation;
             //Debug.Log(gameObject.name, this);
         }

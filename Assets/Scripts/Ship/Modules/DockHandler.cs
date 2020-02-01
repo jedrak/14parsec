@@ -9,6 +9,7 @@ public class DockHandler : MonoBehaviour
     private DragDrop _dragDrop; 
     [SerializeField]
     public Dock _dock { get; private set; } = null;
+    public bool freezePos; 
     void Start()
     {
         _dragDrop = GetComponent<DragDrop>();
@@ -19,7 +20,7 @@ public class DockHandler : MonoBehaviour
     {
 
 
-
+        freezePos = true;
        
     }
 
@@ -57,6 +58,7 @@ public class DockHandler : MonoBehaviour
             _dock.Dettach();
         }
         _dock = null;
+        freezePos = false;
         
     }
 
