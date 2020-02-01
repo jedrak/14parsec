@@ -19,15 +19,6 @@ public class Meteor : SpawnAble
 
     public Rigidbody2D rb;
 
-
-    void OnAwake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
     void OnEnable()
     {
         rb = GetComponent<Rigidbody2D>();
