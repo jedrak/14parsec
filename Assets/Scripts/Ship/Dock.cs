@@ -16,13 +16,16 @@ public class Dock : MonoBehaviour, IDocable
     [SerializeField]
     private DockHandler item = null;
     private SpriteRenderer wire;
-
+    //////////////////
+    private AudioSource audio;
 
     public void Attach(DockHandler item)
     {
         wire.enabled = true;
         this.item = item;
         item.GetComponent<IAttachable>().OnAttach();
+        ///////////////////
+        audio.Play();
     }
 
     public void Dettach()
@@ -46,6 +49,8 @@ public class Dock : MonoBehaviour, IDocable
     {
         wire = GetComponentInChildren<SpriteRenderer>();
         wire.enabled = false;
+        //////////////////
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
