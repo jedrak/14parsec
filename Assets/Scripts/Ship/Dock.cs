@@ -15,17 +15,19 @@ public class Dock : MonoBehaviour, IDocable
 {
     [SerializeField]
     private DockHandler item = null;
+    private SpriteRenderer wire;
 
 
     public void Attach(DockHandler item)
     {
+        wire.enabled = true;
         this.item = item;
         item.GetComponent<IAttachable>().OnAttach();
     }
 
     public void Dettach()
     {
-        
+        wire.enabled = false;
         item.GetComponent<IAttachable>().OnDettach();
         this.item = null;
     }
@@ -42,7 +44,8 @@ public class Dock : MonoBehaviour, IDocable
     // Start is called before the first frame update
     void Start()
     {
-        
+        wire = GetComponentInChildren<SpriteRenderer>();
+        wire.enabled = false;
     }
 
     // Update is called once per frame
