@@ -19,6 +19,7 @@ public class Meteor : SpawnAble
 
     Rigidbody2D rb;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();

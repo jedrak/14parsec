@@ -16,6 +16,8 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     float outRange = 10;
     [SerializeField]
+    float prepareTime = 0;
+    [SerializeField]
     float[] timeToNextSpawn = { 1, 0, 3, 2, 1, 2 };
 
     GameObject[] list;
@@ -24,6 +26,7 @@ public class Spawner : MonoBehaviour
 
     void Start()
     {
+        time = prepareTime;
         list = new GameObject[maxCount];
         spawnAble = new SpawnAble[maxCount];
         for(int i=0; i<maxCount; i++)
@@ -31,7 +34,6 @@ public class Spawner : MonoBehaviour
             list[i] = GameObject.Instantiate(prifab, new Vector3(100,100,100), Quaternion.identity,null);
             spawnAble[i] = list[i].GetComponent<SpawnAble>();
         }
-        ResetTime();
         for(int i=0; i<startCount; i++)
         {
             Spawn();
