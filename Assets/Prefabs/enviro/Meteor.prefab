@@ -100,6 +100,8 @@ MonoBehaviour:
   spead: 0.2
   maxRotation: 1
   minRotation: 0.1
+  maxSize: 1.5
+  minSize: 0.7
 --- !u!50 &1398816208692301770
 Rigidbody2D:
   serializedVersion: 4
@@ -136,4 +138,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.25
