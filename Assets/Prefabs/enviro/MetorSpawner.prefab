@@ -44,10 +44,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prifab: {fileID: 2742033648596003328, guid: 1f0b8f00d1840a34dbb0f60fe84b9939, type: 3}
-  maxCount: 10
+  maxCount: 8
   range: 13
   timeToNextSpawn:
-  - 0.7
   - 1
   - 1.3
+  - 1.5
   - 2
