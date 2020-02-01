@@ -8,9 +8,13 @@ public class Spawner : MonoBehaviour
     GameObject prifab;
     [SerializeField]
     int maxCount = 10;
+    [SerializeField]
+    int startCount = 2;
 
     [SerializeField]
-    float range = 10;
+    float spawnRange = 10;
+    [SerializeField]
+    float outRange = 10;
     [SerializeField]
     float[] timeToNextSpawn = { 1, 0, 3, 2, 1, 2 };
 
@@ -28,6 +32,10 @@ public class Spawner : MonoBehaviour
             spawnAble[i] = list[i].GetComponent<SpawnAble>();
         }
         ResetTime();
+        for(int i=0; i<startCount; i++)
+        {
+            Spawn();
+        }
     }
 
     void Update()
@@ -43,10 +51,13 @@ public class Spawner : MonoBehaviour
     void Spawn()
     {
         Vector2 direction = new Vector2(Random.value-0.5f, Random.value - 0.5f);
-        direction = direction.normalized * range;
+        direction = direction.normalized * spawnRange;
         int maxIndex = FindFarthest();
-        list[maxIndex].transform.position = transform.position + (Vector3)direction;
-        spawnAble[maxIndex].Spawn((Vector3)direction);
+        if(Vector2.Distance(transform.position, list[maxIndex].transform.position) > outRange)
+        {
+            list[maxIndex].transform.position = transform.position + (Vector3)direction;
+            spawnAble[maxIndex].Spawn((Vector3)direction);
+        }
     }
 
     int FindFarthest()

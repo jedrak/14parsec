@@ -317,7 +317,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -509,15 +509,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: spawnRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[2]
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[3]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: outRange
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: startCount
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8985599514764332277, guid: aa70667d9b387b0439395315cd1fa4cd,
         type: 3}
       propertyPath: m_Name
       value: MeteorSpawner
-      objectReference: {fileID: 0}
-    - target: {fileID: 8985599514764332277, guid: aa70667d9b387b0439395315cd1fa4cd,
-        type: 3}
-      propertyPath: m_Icon
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa70667d9b387b0439395315cd1fa4cd, type: 3}
