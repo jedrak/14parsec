@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class DragDrop : MonoBehaviour
 {
-    public Vector3 startSpeed, acceleration;
+
     public bool _isDraged { get; private set; }
     private Rigidbody2D _rb;
 

@@ -37,13 +37,17 @@ public class DockHandler : MonoBehaviour
         if (_dock != null)
         {
             _dock.Attach(this);
-
+            Debug.Log(_dock.name);
 
             if(DistanceToDock(_dock) > minimalDistance)
             {
                 _dock.Dettach();
+                _dock = null;
             }
+            
         }
+
+        
        
     }
 
