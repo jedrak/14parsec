@@ -40,7 +40,6 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    //Random.value od 0 do 1
     void Spawn()
     {
         Vector2 direction = new Vector2(Random.value-0.5f, Random.value - 0.5f);
