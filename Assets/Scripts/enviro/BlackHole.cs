@@ -18,12 +18,10 @@ public class BlackHole : SpawnAble
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Czarna Dziura jest");
-        if (collision.tag == "Meteor")
+        if (collision.gameObject.GetComponent<SpawnAble>() != null || collision.gameObject.GetComponent<ShipMove>() != null)
         {
             Vector2 direction = transform.position - collision.transform.position;
             collision.GetComponent<Rigidbody2D>().AddForce(direction.normalized * strength);
-            Debug.Log("Czarna Dziura działa");
         }
     }
 
