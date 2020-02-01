@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Radar : MonoBehaviour, IAttachable
 {
-    bool attached = false;
+    public bool attached = false;
     public void OnAttach()
     {
         attached = true;
@@ -16,16 +16,5 @@ public class Radar : MonoBehaviour, IAttachable
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-   
   
 }

@@ -43,22 +43,25 @@ public class RadarObjectCounter : MonoBehaviour
 
     public void SetColor()
     {
-        if (counterModules > 0)
+        if (GetComponentInParent<Radar>().attached)
         {
-            material.SetColor("_EmissionColor", Color.green);
-            //GetComponentInChildren<ParticleSystem>().startColor = Color.green;
-            Debug.Log("Green");
-        }
-        else if (counterObstacles > 0)
-        {
+            if (counterModules > 0)
+            {
+                material.SetColor("_EmissionColor", Color.green);
+                //GetComponentInChildren<ParticleSystem>().startColor = Color.green;
+                //Debug.Log("Green");
+            }
+            else if (counterObstacles > 0)
+            {
 
-            material.SetColor("_EmissionColor", Color.red);
-            Debug.Log("red");
-        }
-        else
-        {
-            material.SetColor("_EmissionColor", Color.magenta);
-            Debug.Log("Violet");
+                material.SetColor("_EmissionColor", Color.red);
+                //Debug.Log("red");
+            }
+            else
+            {
+                material.SetColor("_EmissionColor", Color.magenta);
+                //Debug.Log("Violet");
+            }
         }
     }
 }
