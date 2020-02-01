@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DockHandler : MonoBehaviour
 {
+    [Range(0.0f, 2.0f)]
+    public float minimalDistance;
     private DragDrop _dragDrop; 
     [SerializeField]
     private Dock _dock = null;
@@ -15,19 +17,55 @@ public class DockHandler : MonoBehaviour
 
     private void OnMouseUp()
     {
-        float minimalDistance = 3.0f;
-        foreach(Dock dock in FindObjectsOfType<Dock>()) 
+
+
+
+       
+    }
+
+    public void FindNearest()
+    {
+        float distance = minimalDistance;
+        foreach (Dock dock in FindObjectsOfType<Dock>())
         {
-            if (DistanceToDock(dock) < minimalDistance)
+            if (DistanceToDock(dock) < distance)
             {
-                minimalDistance = DistanceToDock(dock);
+                distance = DistanceToDock(dock);
                 _dock = dock;
             }
-        }    
+        }
+        if (_dock != null)
+        {
+            _dock.Attach(this);
+
+
+            if(DistanceToDock(_dock) > minimalDistance)
+            {
+                _dock.Dettach();
+            }
+        }
+       
+    }
+
+    private void OnMouseDown()
+    {
+        if(_dock != null)
+        {
+            _dock.Dettach();
+
+        }
+        _dock = null;
+        
     }
 
     public float DistanceToDock(Dock dock)
     {
         return Vector3.Distance(transform.position, dock.transform.position);
+    }
+
+    private void Update()
+    {
+        FindNearest();
+        
     }
 }

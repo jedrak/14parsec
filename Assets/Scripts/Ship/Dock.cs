@@ -6,16 +6,18 @@ using UnityEngine;
 
 interface IDocable
 {
-    void Attach(DragDrop item);
+    void Attach(DockHandler item);
     void Dettach();
     bool Docked();
     
 }
 public class Dock : MonoBehaviour, IDocable
 {
-    DragDrop item = null;
+    [SerializeField]
+    private DockHandler item = null;
 
-    public void Attach(DragDrop item)
+
+    public void Attach(DockHandler item)
     {
         this.item = item;
     }
@@ -28,6 +30,13 @@ public class Dock : MonoBehaviour, IDocable
     public bool Docked()
     {
         return item != null;
+    }
+
+
+
+    public void Rot()
+    {
+        item.transform.rotation = transform.rotation;
     }
 
 
@@ -44,6 +53,7 @@ public class Dock : MonoBehaviour, IDocable
         {
             item.transform.position = transform.position;
             item.transform.rotation = transform.rotation;
+            //Debug.Log(gameObject.name, this);
         }
     }
 }
