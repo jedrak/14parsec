@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class CenterBlackHole : MonoBehaviour
 {
+    [SerializeField]
+    float distance = 150;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.GetComponent<BlackHole>() == null)
         {
-            Destroy(collision);
+            Vector3 direction = new Vector3(Random.value - 0.5f, Random.value - 0.5f, 0);
+            direction = direction.normalized * distance;
+            collision.transform.position += direction;
         }
     }
 }
