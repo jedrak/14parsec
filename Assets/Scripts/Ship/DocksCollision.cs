@@ -25,8 +25,18 @@ public class DocksCollision : MonoBehaviour
         for(int i = 0; i < maxNumber; i++)
         {
             int rand = Random.Range(0, docks.Length - 1);
-            Debug.Log(docks[rand]);
-            docks[rand].Dettach();
+            if (docks[rand].item != null)
+            {
+                DockHandler buff = docks[rand].item;
+                docks[rand].Dettach();
+                buff.GetComponent<DockHandler>().StartCoroutine("BlinkEnable");
+                buff.GetComponent<Rigidbody2D>().velocity = buff.transform.localPosition * new Vector2(1, 1);
+                Debug.Log(buff.GetComponent<Rigidbody2D>().velocity);
+                
+                
+            }
+                
+            
         }
     }
 }

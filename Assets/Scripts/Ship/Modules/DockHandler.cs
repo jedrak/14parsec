@@ -49,7 +49,12 @@ public class DockHandler : MonoBehaviour
         }
     }
 
-
+    public IEnumerator BlinkEnable()
+    {
+        enabled = false;
+        yield return new WaitForSeconds(.1f);
+        enabled = true;
+    }
 
     private void OnMouseDown()
     {
