@@ -20,12 +20,12 @@ public class Dock : MonoBehaviour, IDocable
     public void Attach(DockHandler item)
     {
         this.item = item;
-        item.OnAttach();
+        item.GetComponent<IAttachable>().OnAttach();
     }
 
     public void Dettach()
     {
-        item.OnDettach();
+        item.GetComponent<IAttachable>().OnDettach();
         this.item = null;
     }
 
@@ -57,5 +57,6 @@ public class Dock : MonoBehaviour, IDocable
             item.transform.rotation = transform.rotation;
             //Debug.Log(gameObject.name, this);
         }
+
     }
 }

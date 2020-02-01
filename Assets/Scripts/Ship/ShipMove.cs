@@ -18,7 +18,7 @@ public class ShipMove : MonoBehaviour
     void Update()
     {
         _rb.AddForce(-_rb.velocity / 15);
-        Debug.Log(_rb.velocity);
+        //Debug.Log(_rb.velocity);
         Debug.DrawRay(transform.position, _rb.velocity);
     }
 }

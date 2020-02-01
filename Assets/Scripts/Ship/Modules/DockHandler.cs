@@ -48,22 +48,13 @@ public class DockHandler : MonoBehaviour
         }
     }
 
-    public virtual void OnAttach()
-    {
 
-    }
-
-    public virtual void OnDettach()
-    {
-
-    }
 
     private void OnMouseDown()
     {
         if(_dock != null)
         {
             _dock.Dettach();
-
         }
         _dock = null;
         
