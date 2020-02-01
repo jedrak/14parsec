@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DocksCollision : MonoBehaviour
 {
+    [Range(0.0f, 0.5f)]
+    public float speed;
     [Range(2, 5)]
     public int maxNumber;
     Dock[] docks;
@@ -30,7 +32,7 @@ public class DocksCollision : MonoBehaviour
                 DockHandler buff = docks[rand].item;
                 docks[rand].Dettach();
                 buff.GetComponent<DockHandler>().StartCoroutine("BlinkEnable");
-                buff.GetComponent<Rigidbody2D>().velocity = buff.transform.localPosition * new Vector2(1, 1) /4;
+                buff.GetComponent<Rigidbody2D>().velocity = buff.transform.localPosition * (new Vector2(1, 1) * speed * 0.01f);
                 Debug.Log(buff.GetComponent<Rigidbody2D>().velocity);
                 
                 

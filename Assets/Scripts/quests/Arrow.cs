@@ -5,7 +5,7 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     [SerializeField]
-    Transform target;
+    public Transform target;
     [SerializeField]
     Transform ship;
     [SerializeField]
