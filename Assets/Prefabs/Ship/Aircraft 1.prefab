@@ -1239,7 +1239,7 @@ GameObject:
   - component: {fileID: 3253386366101856541}
   - component: {fileID: 3253386366101856540}
   - component: {fileID: 6748995528041609935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Aircraft 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

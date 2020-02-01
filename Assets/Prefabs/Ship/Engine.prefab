@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2485916307821204931}
   - component: {fileID: 2485916307821204928}
   - component: {fileID: 2105528414139087182}
-  m_Layer: 0
+  - component: {fileID: 5784904888319421009}
+  m_Layer: 8
   m_Name: Engine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,6 +88,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 0.05
+--- !u!114 &5784904888319421009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2485916307821204934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15bb785a6dd9f5748938895b378da9d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimalDistance: 0.15
 --- !u!1 &2485916309444275486
 GameObject:
   m_ObjectHideFlags: 0
@@ -97,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2485916309444275481}
   - component: {fileID: 2485916309444275480}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2485916309532748227}
   - component: {fileID: 2485916309532748226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EngineCrystal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,6 +339,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EngineFire (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999740050351737708, guid: 2e7ae0ba8e1ad0c4285b9aaa270209a2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5999740050351737709, guid: 2e7ae0ba8e1ad0c4285b9aaa270209a2,
         type: 3}
