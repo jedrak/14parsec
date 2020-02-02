@@ -1692,11 +1692,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stars
       objectReference: {fileID: 0}
-    - target: {fileID: 5546533179770119399, guid: 7aa1d13320bc5d24a8e8578b29f1009d,
-        type: 3}
-      propertyPath: TrailModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5546533179770119416, guid: 7aa1d13320bc5d24a8e8578b29f1009d,
         type: 3}
       propertyPath: m_LocalPosition.x
