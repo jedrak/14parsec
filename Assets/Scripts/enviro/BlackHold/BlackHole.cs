@@ -7,7 +7,7 @@ public class BlackHole : SpawnAble
     [SerializeField]
     float strength = 2;
     [SerializeField]
-    float maxVolume = 0.5f;
+    float maxVolume = 0.4f;
     [SerializeField]
     float rangeStart = 4;
     [SerializeField]
