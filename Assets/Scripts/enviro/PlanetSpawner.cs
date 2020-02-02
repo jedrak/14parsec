@@ -21,7 +21,7 @@ public class PlanetSpawner : MonoBehaviour
         arrow.target = go.transform;
         planets.Push(go);
         coll.offset =  new Vector2(translate.x, translate.y);
-        Debug.Log(coll.offset);
+        //Debug.Log(coll.offset);
     }
     // Start is called before the first frame update
     void Start()

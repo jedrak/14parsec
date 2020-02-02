@@ -19,9 +19,9 @@ public class HitMeteor : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Instantiate(meteorParticle, transform.position, Quaternion.identity);
+        Instantiate(meteorParticle, collision.contacts[0].point, Quaternion.identity);
         if(collision.gameObject.GetComponent<Meteor>() != null)
         {
             // ZDERZENIE METEOROW
@@ -32,7 +32,7 @@ public class HitMeteor : MonoBehaviour
         }
         else if (collision.gameObject.GetComponent<ShipMove>() != null)
         {
-            Instantiate(aircraftParticle, collision.gameObject.transform.position, Quaternion.identity);
+            Instantiate(aircraftParticle, collision.contacts[0].point, Quaternion.identity);
             // ZDERZENIE Z STATKIEM
             //audio.Play();
         }

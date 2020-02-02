@@ -38,7 +38,7 @@ public class DocksCollision : MonoBehaviour
                 docks[rand].Dettach();
                 buff.GetComponent<DockHandler>().StartCoroutine("BlinkEnable");
                 buff.GetComponent<Rigidbody2D>().velocity = buff.transform.localPosition * (new Vector2(1, 1) * speed * 0.01f);
-                Debug.Log(buff.GetComponent<Rigidbody2D>().velocity);
+                //Debug.Log(buff.GetComponent<Rigidbody2D>().velocity);
                 
                 
             }
