@@ -5,8 +5,14 @@ using UnityEngine;
 public class Shield : MonoBehaviour, IAttachable
 {
     private PolygonCollider2D coll;
+    AudioSource audio;
+
     public void OnAttach()
     {
+        if(coll.enabled == false)
+        {
+            audio.Play();
+        }
         coll.enabled = true;
     }
 
@@ -20,6 +26,7 @@ public class Shield : MonoBehaviour, IAttachable
     {
         coll = GetComponent<PolygonCollider2D>();
         coll.enabled = false;
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame

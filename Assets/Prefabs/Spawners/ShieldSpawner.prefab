@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8985599514764332275}
   - component: {fileID: 8985599514764332276}
   m_Layer: 0
-  m_Name: EngineSpawner
+  m_Name: ShieldSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prifab: {fileID: 2485916307821204934, guid: 006c72c9390bfd84a85e7826fe0630bc, type: 3}
-  maxCount: 2
+  maxCount: 1
   startCount: 1
   spawnRange: 13
   outRange: 13

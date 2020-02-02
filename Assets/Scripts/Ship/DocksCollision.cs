@@ -9,10 +9,13 @@ public class DocksCollision : MonoBehaviour
     [Range(2, 5)]
     public int maxNumber;
     Dock[] docks;
+
+    AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,8 @@ public class DocksCollision : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        audio.Play();
+
         docks = GetComponentsInChildren<Dock>();
         int numOfDestroyedModules = Random.Range(1, maxNumber);
         for(int i = 0; i < maxNumber; i++)
