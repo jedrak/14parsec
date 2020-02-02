@@ -5,6 +5,9 @@ using UnityEngine;
 public class HitMeteor : MonoBehaviour
 {
     AudioSource audio;
+    [SerializeField] ParticleSystem meteorParticle;
+    [SerializeField] ParticleSystem aircraftParticle;
+
 
     void Start()
     {
@@ -18,6 +21,7 @@ public class HitMeteor : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Instantiate(meteorParticle, transform.position, Quaternion.identity);
         if(collision.gameObject.GetComponent<Meteor>() != null)
         {
             // ZDERZENIE METEOROW
@@ -28,6 +32,7 @@ public class HitMeteor : MonoBehaviour
         }
         else if (collision.gameObject.GetComponent<ShipMove>() != null)
         {
+            Instantiate(aircraftParticle, collision.gameObject.transform.position, Quaternion.identity);
             // ZDERZENIE Z STATKIEM
             //audio.Play();
         }

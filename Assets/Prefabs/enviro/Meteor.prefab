@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a46be067ce21e304da997a0cdaf3c8ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meteorParticle: {fileID: 7894419503212177870, guid: 5bf5e9dddbbd6ad4ca1e00999c3107cd,
+    type: 3}
+  aircraftParticle: {fileID: 839608780142004138, guid: f9f5122033cea8943ad61a0b754455d6,
+    type: 3}
 --- !u!114 &2829018062217027828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +121,7 @@ MonoBehaviour:
   minRotation: 0.1
   maxSize: 3
   minSize: 2
+  rb: {fileID: 0}
 --- !u!50 &1398816208692301770
 Rigidbody2D:
   serializedVersion: 4

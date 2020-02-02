@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2488585124927376543}
   - component: {fileID: 1788411727456118780}
   - component: {fileID: 6923683931133345555}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 7637968116670412438}
   - component: {fileID: 9167933999375242181}
   - component: {fileID: 7067311429253524329}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BlackHole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,6 +286,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlackHoleWave
+      objectReference: {fileID: 0}
+    - target: {fileID: 6868320938971871224, guid: 153b62519b95fee41aa5c3996aa797bc,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6868320938971871227, guid: 153b62519b95fee41aa5c3996aa797bc,
         type: 3}
