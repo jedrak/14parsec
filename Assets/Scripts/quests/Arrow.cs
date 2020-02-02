@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Arrow : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class Arrow : MonoBehaviour
     float screenX;
     float screenY;
     RectTransform rectTransform;
+    [SerializeField]
+    float textOffSet = 0.1f;
+    [SerializeField]
+    RectTransform textTransform;
+    [SerializeField]
+    Text text;
 
     void Start()
     {
@@ -27,8 +34,10 @@ public class Arrow : MonoBehaviour
     void Update()
     {
         Vector3 direction = Direction();
-        //rectTransform.position = direction + startPozycion;
-        if(Mathf.Abs(direction.x/direction.y) > screenX/screenY)
+
+        text.text = ((int)direction.magnitude).ToString() + " pc";
+
+        if (Mathf.Abs(direction.x/direction.y) > screenX/screenY)
         {
             direction = direction * (screenX / Mathf.Abs(direction.x));
         }
@@ -36,7 +45,9 @@ public class Arrow : MonoBehaviour
         {
             direction = direction * (screenY / Mathf.Abs(direction.y));
         }
+
         rectTransform.position = direction + startPozycion;
+        textTransform.position = (1 - textOffSet) * (direction) + startPozycion;
         rectTransform.eulerAngles = Vector3.forward * Vector3.SignedAngle(direction, Vector3.up, Vector3.back);
     }
 
