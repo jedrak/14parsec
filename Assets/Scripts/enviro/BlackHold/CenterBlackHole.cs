@@ -14,6 +14,10 @@ public class CenterBlackHole : MonoBehaviour
             Vector3 direction = new Vector3(Random.value - 0.5f, Random.value - 0.5f, 0);
             direction = direction.normalized * distance;
             collision.transform.position += direction;
+            if(collision.GetComponent<ShipMove>() != null)
+            {
+                collision.GetComponent<ShipMove>().BlackHole(collision.transform.position);
+            }
         }
     }
 }

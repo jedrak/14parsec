@@ -46,8 +46,8 @@ MonoBehaviour:
   prifab: {fileID: 2742033648596003328, guid: b8dc1187478f0bc4ca27c35ced876ed6, type: 3}
   maxCount: 1
   startCount: 0
-  spawnRange: 15
-  outRange: 15
-  prepareTime: 15
+  spawnRange: 20
+  outRange: 20
+  prepareTime: 60
   timeToNextSpawn:
   - 20

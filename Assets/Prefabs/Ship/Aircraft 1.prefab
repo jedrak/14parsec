@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988640802905
 AudioSource:
@@ -513,6 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988718726958
 AudioSource:
@@ -655,6 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988860747756
 AudioSource:
@@ -797,6 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988874040176
 AudioSource:
@@ -939,6 +943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988887577638
 AudioSource:
@@ -1152,6 +1157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988917745561
 AudioSource:
@@ -1375,6 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988934310247
 AudioSource:
@@ -1517,6 +1524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988955141090
 AudioSource:
@@ -1659,6 +1667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278988963469072
 AudioSource:
@@ -2044,6 +2053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989069321456
 AudioSource:
@@ -2186,6 +2196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989112724164
 AudioSource:
@@ -2409,6 +2420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989262854873
 AudioSource:
@@ -2551,6 +2563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989345758363
 AudioSource:
@@ -2693,6 +2706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989392761419
 AudioSource:
@@ -2916,6 +2930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989440401798
 AudioSource:
@@ -3220,6 +3235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989535633813
 AudioSource:
@@ -3362,6 +3378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989551753722
 AudioSource:
@@ -3504,6 +3521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989658800484
 AudioSource:
@@ -3727,6 +3745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989726031834
 AudioSource:
@@ -4143,6 +4162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989849982862
 AudioSource:
@@ -4573,6 +4593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1174bcef9a1a2c843bf9e516dfb00a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stars: {fileID: 0}
   maxVelocity: 0
 --- !u!60 &7239278989904082283
 PolygonCollider2D:
@@ -4758,6 +4779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989960525327
 AudioSource:
@@ -4900,6 +4922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278989999100443
 AudioSource:
@@ -10129,6 +10152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278990264446532
 AudioSource:
@@ -10271,6 +10295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278990288813702
 AudioSource:
@@ -10818,6 +10843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278990560167358
 AudioSource:
@@ -10960,6 +10986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02abca5f241b1324f989c1ddc5416b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   dettachMP3: {fileID: 8300000, guid: 40e3a47b8c218cb46ab4938fc82d004e, type: 3}
 --- !u!82 &7239278990630897211
 AudioSource:
@@ -11275,6 +11302,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4205512028529946604, guid: 1746741bf65f3b64fbf2bb745ef934c4,
+        type: 3}
+      propertyPath: spawnRange
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205512028529946604, guid: 1746741bf65f3b64fbf2bb745ef934c4,
+        type: 3}
+      propertyPath: outRange
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4205512028529946604, guid: 1746741bf65f3b64fbf2bb745ef934c4,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[0]
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4205512028529946605, guid: 1746741bf65f3b64fbf2bb745ef934c4,
         type: 3}
       propertyPath: m_Name
@@ -11349,6 +11391,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 8ecb435b38b0fb84b8b14535a91e3f86,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 8ecb435b38b0fb84b8b14535a91e3f86,
+        type: 3}
+      propertyPath: maxCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 8ecb435b38b0fb84b8b14535a91e3f86,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 8ecb435b38b0fb84b8b14535a91e3f86,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[2]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 8ecb435b38b0fb84b8b14535a91e3f86,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[3]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 8ecb435b38b0fb84b8b14535a91e3f86,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[1]
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8985599514764332277, guid: 8ecb435b38b0fb84b8b14535a91e3f86,
         type: 3}
@@ -11425,6 +11497,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 9fd820f35eec4f04086134c79d06e507,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 9fd820f35eec4f04086134c79d06e507,
+        type: 3}
+      propertyPath: maxCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 9fd820f35eec4f04086134c79d06e507,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 9fd820f35eec4f04086134c79d06e507,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[2]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 9fd820f35eec4f04086134c79d06e507,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[3]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: 9fd820f35eec4f04086134c79d06e507,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[1]
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8985599514764332277, guid: 9fd820f35eec4f04086134c79d06e507,
         type: 3}
       propertyPath: m_Name
@@ -11499,6 +11601,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: maxCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[0]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[2]
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[3]
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8985599514764332276, guid: aa70667d9b387b0439395315cd1fa4cd,
+        type: 3}
+      propertyPath: timeToNextSpawn.Array.data[1]
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8985599514764332277, guid: aa70667d9b387b0439395315cd1fa4cd,
         type: 3}
