@@ -9,6 +9,7 @@ public class PlanetSpawner : MonoBehaviour
     public GameObject planetPrefab;
     public Arrow arrow;
     public Stack<GameObject> planets;
+    public int money;
     private CircleCollider2D coll;
 
 
@@ -21,6 +22,10 @@ public class PlanetSpawner : MonoBehaviour
         arrow.target = go.transform;
         planets.Push(go);
         coll.offset =  new Vector2(translate.x, translate.y);
+        foreach(Cake cake in GetComponentsInChildren<Cake>())
+        {
+            cake.readyForDelivery = true;
+        }
         //Debug.Log(coll.offset);
     }
     // Start is called before the first frame update
@@ -29,6 +34,10 @@ public class PlanetSpawner : MonoBehaviour
         planets = new Stack<GameObject>();
         coll = GetComponent<CircleCollider2D>();
         NewPlanet();
+        foreach (Cake cake in GetComponentsInChildren<Cake>())
+        {
+            cake.readyForDelivery = false;
+        }
     }
 
 
