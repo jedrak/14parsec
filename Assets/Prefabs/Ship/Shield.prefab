@@ -444,6 +444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665149531678747563}
   - component: {fileID: 1665149531678747564}
+  - component: {fileID: 1320791755478808700}
   m_Layer: 8
   m_Name: ForceBow
   m_TagString: Untagged
@@ -515,3 +516,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &1320791755478808700
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665149531678747562}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.14}
+    newSize: {x: 0.8, y: 0.14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.36595297, y: 0.0030950508}
+      - {x: 0.20833492, y: 0.06999999}
+      - {x: -0.20357291, y: 0.06738105}
+      - {x: -0.37119102, y: 0.010475934}
+      - {x: -0.39999998, y: -0.07}
+      - {x: -0.37190375, y: -0.085714005}
+      - {x: -0.27452105, y: -0.003095011}
+      - {x: 0.252488, y: -0.0006355643}
+      - {x: 0.3723801, y: -0.08571404}
+      - {x: 0.39999998, y: -0.07}
