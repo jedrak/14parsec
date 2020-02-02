@@ -16,26 +16,58 @@ public class Arrow : MonoBehaviour
     float screenX;
     float screenY;
     RectTransform rectTransform;
+    Image image;
+    bool acttive = true;
+
     [SerializeField]
     float textOffSet = 0.1f;
     [SerializeField]
     RectTransform textTransform;
     [SerializeField]
     Text text;
+    [SerializeField]
+    float distanceScale = 80;
+    [SerializeField]
+    int precyzion = 2;
+    [SerializeField]
+    float planetaSize = 12;
 
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
+        image = GetComponent<Image>();
         startPozycion = rectTransform.position;
         screenX = (Screen.width/2) * (1-distanceFromeBorder);
         screenY = (Screen.height/2) * (1-distanceFromeBorder);
+
+        precyzion = (int)Mathf.Pow(10, precyzion);
     }
 
     void Update()
     {
         Vector3 direction = Direction();
+        float parsec = (direction.magnitude - planetaSize) * distanceScale;
+        parsec = (int)parsec;
 
-        text.text = ((int)direction.magnitude).ToString() + " pc";
+        if(parsec>0)
+        {
+            text.text = (parsec / precyzion).ToString() + " pc";
+            if(acttive == false)
+            {
+                acttive = true;
+                image.enabled = true;
+            }
+        }
+        else
+        {
+            if(acttive == true)
+            {
+                text.text = " ";
+                acttive = false;
+                image.enabled = false;
+            }
+        }
+        
 
         if (Mathf.Abs(direction.x/direction.y) > screenX/screenY)
         {
