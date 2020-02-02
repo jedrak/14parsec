@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cake : MonoBehaviour, IAttachable
 {
-    public bool readyForDelivery;
+    public bool readyForDelivery =false;
     private PlanetSpawner _ps;
     public void OnAttach()
     {
@@ -15,6 +15,7 @@ public class Cake : MonoBehaviour, IAttachable
     {
         yield return new WaitForSeconds(3.0f);
         readyForDelivery = false;
+        _ps.NewPlanet();
         Destroy(gameObject);
     }
 
@@ -22,8 +23,9 @@ public class Cake : MonoBehaviour, IAttachable
     {
         if (readyForDelivery)
         {
+           
             StartCoroutine(WaitForDelivery());
-
+             
         }
     }
 
@@ -31,6 +33,7 @@ public class Cake : MonoBehaviour, IAttachable
     private void OnDestroy()
     {
         //grosza daj uiaowi cnavasem potrzasnij
+       
         _ps.money++;
         Debug.Log(_ps.money);
     }
