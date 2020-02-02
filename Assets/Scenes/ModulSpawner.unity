@@ -929,6 +929,16 @@ PrefabInstance:
       propertyPath: ship
       value: 
       objectReference: {fileID: 3253386366203812760}
+    - target: {fileID: 1501344410361268522, guid: 9e52a89a0be4cf947adf172c4ef8becc,
+        type: 3}
+      propertyPath: distanceScale
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1501344410361268522, guid: 9e52a89a0be4cf947adf172c4ef8becc,
+        type: 3}
+      propertyPath: precyzion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e52a89a0be4cf947adf172c4ef8becc, type: 3}
 --- !u!4 &1208431804 stripped
