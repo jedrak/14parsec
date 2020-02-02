@@ -22,6 +22,9 @@ public class DragDrop : MonoBehaviour
         //Debug.Log(transform.position);
     }
 
+   
+
+
     private void OnMouseUp()
     {
         _isDraged = false;
@@ -31,5 +34,4 @@ public class DragDrop : MonoBehaviour
     {
 
     }
-
 }
