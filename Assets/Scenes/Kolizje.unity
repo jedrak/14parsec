@@ -1351,6 +1351,7 @@ GameObject:
   - component: {fileID: 1687258582}
   - component: {fileID: 1687258586}
   - component: {fileID: 1687258583}
+  - component: {fileID: 1687258587}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1467,6 +1468,18 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1687258587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687258581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa25750ae72d6547a4abc6a639eb019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1719321173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2019,11 +2032,141 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7239278988640802904, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988718726945, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988860747759, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988874040179, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988887577625, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988917745560, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988934310246, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988955141093, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278988963469075, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989069321459, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989112724167, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989262854872, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989345758362, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989392761418, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989440401913, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989535633812, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989551753725, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989658800487, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989726031837, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989849982849, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
     - target: {fileID: 7239278989904082294, guid: 702c1aa0fcee9b04085b1ad66481473c,
         type: 3}
       propertyPath: speed
       value: 0.077
       objectReference: {fileID: 0}
+    - target: {fileID: 7239278989960525326, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989999100442, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278990264446535, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278990288813817, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278990560167345, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278990630897210, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 1687258587}
     - target: {fileID: 8751215874884161286, guid: 702c1aa0fcee9b04085b1ad66481473c,
         type: 3}
       propertyPath: maxCount

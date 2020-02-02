@@ -13,9 +13,11 @@ interface IDocable
 }
 public class Dock : MonoBehaviour, IDocable
 {
+    public CamShake camera; 
     [SerializeField]
     public DockHandler item { get; private set; } = null;
     private SpriteRenderer wire;
+
     //////////////////
     private AudioSource audio;
     [SerializeField]
@@ -29,8 +31,10 @@ public class Dock : MonoBehaviour, IDocable
         ///////////////////
         if(Docked() == false)
         {
+            camera.StartCoroutine(camera.Shake(.01f, .05f));
             audio.clip = attachMP3;
             Play();
+
         }
         //\\\\\\\\\\\\\\\\\
         this.item = item;
