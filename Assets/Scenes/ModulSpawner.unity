@@ -1014,6 +1014,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counterModules: 0
   counterObstacles: 0
+--- !u!114 &1377693916 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8124876409375501946, guid: 16cfcf74d069d6a4cbbacc4f5d504b46,
+    type: 3}
+  m_PrefabInstance: {fileID: 7792803578742934777}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c80ea326441eb644ab581e3e6db0827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1378796641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1957,6 +1969,11 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 1687258587}
+    - target: {fileID: 7239278989904082280, guid: 702c1aa0fcee9b04085b1ad66481473c,
+        type: 3}
+      propertyPath: stars
+      value: 
+      objectReference: {fileID: 1377693916}
     - target: {fileID: 7239278989960525326, guid: 702c1aa0fcee9b04085b1ad66481473c,
         type: 3}
       propertyPath: camera

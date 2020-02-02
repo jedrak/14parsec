@@ -25,6 +25,19 @@ public class StarsControler : MonoBehaviour
         }
     }
 
+    public void BlackHole(Vector3 newPozytion)
+    {
+        transform.position = newPozytion;
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                GameObject pom = Instantiate(starsOBJ, new Vector3((j - 1) * 50, (i - 1) * 50, 0), Quaternion.identity);
+                stars[i][j].transform.position = new Vector3((j - 1) * 50, (i - 1) * 50, 0) + newPozytion;
+            }
+        }
+    }
+
     public void Move(int wiersz, int kolumna, Vector2 v)
     {
         Debug.Log(v);
