@@ -8,6 +8,7 @@ public class DocksCollision : MonoBehaviour
     public float speed;
     [Range(2, 5)]
     public int maxNumber;
+    public CamShake camera;
     Dock[] docks;
 
     AudioSource audio;
@@ -26,7 +27,7 @@ public class DocksCollision : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         audio.Play();
-
+        //camera.StartCoroutine(camera.Shake(.01f, .05f));
         docks = GetComponentsInChildren<Dock>();
         int numOfDestroyedModules = Random.Range(1, maxNumber);
         for(int i = 0; i < maxNumber; i++)

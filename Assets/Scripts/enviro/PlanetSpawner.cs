@@ -9,6 +9,7 @@ public class PlanetSpawner : MonoBehaviour
     public List<Sprite> planetSprites;
     public GameObject planetPrefab;
     public Arrow arrow;
+    public Arrow arrowPackage;
     public Stack<GameObject> planets;
     public List<GameObject> packeges;
     public int money;
@@ -25,6 +26,7 @@ public class PlanetSpawner : MonoBehaviour
         arrow.target = go.transform;
         planets.Push(go);
         Instantiate(packeges[Random.Range(0, packeges.Count - 1)], new Vector3(coll.offset.x, coll.offset.y, 0), Quaternion.identity, transform);
+        arrowPackage.target = GetComponentsInChildren<Cake>()[1].transform;
         coll.offset =  new Vector2(translate.x, translate.y);
         if (planets.Count > 1)
         {
