@@ -20,44 +20,47 @@ public class StarsControler : MonoBehaviour
                 GameObject pom = Instantiate(starsOBJ,new Vector3((j-1)*50, (i-1)*50, 0), Quaternion.identity);
                 stars[i][j] = pom.GetComponent<Stars>();
                 stars[i][j].SetParameters(this,i,j);
+                stars[i][j].name = "Stars (" + i.ToString() + ", " + j.ToString() + ")";
             }
         }
     }
 
     public void Move(int wiersz, int kolumna, Vector2 v)
     {
+        Debug.Log(v);
         if(v.x == 0)
         {
-            if (v.y == -1)
+            if (v.y < 0)
             {
                 wiersz = (wiersz + 1) % 3;
-                Debug.Log("gora");
+                
             }
             else
             {
-                wiersz = (wiersz + 4) % 3;
-                Debug.Log("dol");
+                wiersz = (wiersz + 2) % 3;
+                
             }
-            for(int i=0;i<3;i++)
+            Debug.Log("wiersz: "+wiersz);
+            for (int i=0;i<3;i++)
             {
-                stars[wiersz][i].transform.position += (Vector3)v * (-150);
+                stars[wiersz][i].transform.position += (Vector3)v * (150);
             }
         }
         else
         {
-            if (v.x == -1)
+            if (v.x < 0)
             {
                 kolumna = (kolumna + 1) % 3;
-                Debug.Log("prawo");
+                Debug.Log("Kolumna: " + kolumna + "++");
             }
             else
             {
-                kolumna = (kolumna + 4) % 3;
-                Debug.Log("lewo");
+                kolumna = (kolumna + 2) % 3;
+                Debug.Log("Kolumna: " + kolumna + "--");
             }
             for (int j = 0; j < 3; j++)
             {
-                stars[j][kolumna].transform.position += (Vector3)v * (-150);
+                stars[j][kolumna].transform.position += (Vector3)v * (150);
             }
         }
     }

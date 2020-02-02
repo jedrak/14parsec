@@ -14,11 +14,11 @@ public class Stars : MonoBehaviour
             Vector3 direction = collision.transform.position - transform.position;
             float angle = Vector3.SignedAngle(direction, Vector3.up, Vector3.back);
 
-            if (angle > 45 && angle < 135)          controler.Move(wiersz, kolumna, Vector2.left);
-            else if (angle < -45 && angle > -135)   controler.Move(wiersz, kolumna, Vector2.right);
-            else if (angle > -45 && angle < 45)     controler.Move(wiersz, kolumna, Vector2.up);
-            else if (angle > 135 || angle < -135)   controler.Move(wiersz, kolumna, Vector2.down);
-        }
+            if (angle > 45 && angle < 135) controler.Move(wiersz, kolumna, Vector2.left); 
+            else if (angle > -45 && angle < 45) controler.Move(wiersz, kolumna, Vector2.up); 
+            else if (angle > 135 || angle < -135) controler.Move(wiersz, kolumna, Vector2.down); 
+            else if (angle < -45 && angle > -135) controler.Move(wiersz, kolumna, Vector2.right); 
+                        }
     }
 
 
