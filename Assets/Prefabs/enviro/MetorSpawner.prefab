@@ -48,7 +48,7 @@ MonoBehaviour:
   startCount: 0
   spawnRange: 10
   outRange: 10
-  prepareTime: 15
+  prepareTime: 45
   timeToNextSpawn:
   - 1
   - 1.3
