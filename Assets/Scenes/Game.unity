@@ -1489,6 +1489,8 @@ GameObject:
   - component: {fileID: 1687258586}
   - component: {fileID: 1687258583}
   - component: {fileID: 1687258587}
+  - component: {fileID: 1687258588}
+  - component: {fileID: 1687258589}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1544,7 +1546,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.9632344
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1617,6 +1619,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa25750ae72d6547a4abc6a639eb019, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1687258588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687258581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777d8b32fdacc8c48b9023b64c5bbb99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treshold: 1
+--- !u!65 &1687258589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687258581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.72, y: 9.93, z: 0}
+  m_Center: {x: 0, y: 0, z: 10}
 --- !u!224 &1763370582 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1501344408634104809, guid: 9e52a89a0be4cf947adf172c4ef8becc,
@@ -2021,6 +2049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784904888319421009, guid: 006c72c9390bfd84a85e7826fe0630bc,
+        type: 3}
+      propertyPath: minimalDistance
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 006c72c9390bfd84a85e7826fe0630bc, type: 3}

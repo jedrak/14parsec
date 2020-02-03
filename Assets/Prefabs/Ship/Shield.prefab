@@ -171,7 +171,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1665149532452348507}
-  - component: {fileID: 1665149531240024828}
   - component: {fileID: 1665149531240024827}
   - component: {fileID: 1665149531240024826}
   - component: {fileID: 1665149531240024829}
@@ -203,18 +202,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1665149531240024828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1665149531240024824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777d8b32fdacc8c48b9023b64c5bbb99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1665149531240024827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -265,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bb785a6dd9f5748938895b378da9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimalDistance: 0.15
+  minimalDistance: 0.2
   freezePos: 0
 --- !u!60 &1665149531240024825
 PolygonCollider2D:

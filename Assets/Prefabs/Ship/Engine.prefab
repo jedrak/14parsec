@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2485916307821204929}
-  - component: {fileID: 2485916307821204931}
   - component: {fileID: 2485916307821204928}
   - component: {fileID: 2105528414139087182}
   - component: {fileID: 5784904888319421009}
@@ -40,18 +39,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2485916307821204931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2485916307821204934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 777d8b32fdacc8c48b9023b64c5bbb99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2485916307821204928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -105,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bb785a6dd9f5748938895b378da9d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimalDistance: 0.15
+  minimalDistance: 0.2
   freezePos: 0
 --- !u!82 &1017027211943955774
 AudioSource:
