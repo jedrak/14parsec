@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class CameraLerp : MonoBehaviour
 {
-    public Transform ship;
-    // Start is called before the first frame update
-    void Start()
+    private GameObject ship;
+
+
+    private void Start()
     {
-        
+        ship = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, ship.position, Time.deltaTime*1.5f);
+        transform.position = Vector3.Lerp(transform.position, ship.transform.position, Time.deltaTime*1.5f);
         transform.position = new Vector3(transform.position.x, transform.position.y, -10);
     }
 }

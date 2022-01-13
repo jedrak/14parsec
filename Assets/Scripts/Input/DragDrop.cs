@@ -26,22 +26,21 @@ public class DragDrop : MonoBehaviour
         _nearest = null;
         Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mouse = new Vector3(mouse.x, mouse.y, 0);
-        float nearstDistance = treshold, distance;
+
+        float nearestDistance = treshold, distance;
         foreach(var dockHandler in dockHandlers)
         {
             distance = Vector3.Distance(mouse, dockHandler.transform.position);
-            if (distance < nearstDistance)
+            if (distance < nearestDistance)
             {
                 _nearest = dockHandler;
-                nearstDistance = distance;
+                nearestDistance = distance;
             }
             //Debug.Log(dockHandler.name + " " + Vector3.Distance(mouse, dockHandler.transform.position));
         }
-
-       
         //Debug.Log(_nearest.name);
-       
     }
+
     private void OnMouseDrag()
     {
         if(_nearest != null)
@@ -56,17 +55,9 @@ public class DragDrop : MonoBehaviour
         //Debug.Log(transform.position);
     }
 
-   
-
-
     private void OnMouseUp()
     {
         _nearest = null;
         //_isDraged = false;
-    }
-
-    private void Update()
-    {
-
     }
 }
